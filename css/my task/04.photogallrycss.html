@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            background-color: darkgrey;
+            height: 1200px;
+            display: grid;
+            grid-template-rows: 200px 200px 200px;
+            grid-template-columns: 200px 200px 200px;
+            /* grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;  */
+            /* grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(3,1fr); */
+            row-gap: 10px;
+            column-gap: 10px;
+
+        }
+
+        .box  {
+            
+            background-color: cadetblue;
+            border: solid black;
+            /* border-radius: 30px; */
+     
+        }
+        .box img{
+            height: 100%;
+            width: 100%;
+        }
+       #dog{
+        grid-row-start: 1;
+        grid-row-end:3;
+       }
+       #dominos{
+        grid-row: 1;
+        grid-column: 2;
+       }
+       #logo{
+        grid-row-start: 1;
+        grid-row-end: 3;
+       }
+
+       #weather{
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    #sky{
+        grid-row:  3;
+        grid-column: 3;
+    }
+    #w3{
+        grid-row-start: 2;
+        grid-row-end:4;
+    }
+        
+       
+      
+       
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="box" id="dog"><img src="../my task/img/sky 1.jpg" alt=""></div>
+        <div class="box" id="dominos"><img src="../my task/img/sky 2.jpeg" alt=""></div>
+        <div class="box" id="logo"><img src="../my task/img/sky 3.webp" alt=""></div>
+        <div class="box" id="weather"><img src="../my task/img/sky 4.avif" alt=""></div>
+        <div class="box" id="w3"><img src="../my task/img/sky 5.avif" alt=""></div>
+        <div class="box" id="sky"><img src="../my task/img/sky 6.avif" alt=""></div>
+       
+        
+    </section>
+</body>
+
+</html>
