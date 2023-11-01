@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 1 Show Password function</title>
+    <style>
+        #btn{
+            height: 15px;
+        }
+    div.m{
+        
+       margin: 100px 0 0 0;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="m">
+    <label for="password">Enter Password : </label>
+    <input type="password" name="password" id="password">
+   <div>
+       <button id="btn" onclick="togglepw()" ></button>
+       <label for="btn">show password</label>
+   </div>
+</div>
+   <script>
+
+       function togglepw() {
+        let showpw = document.getElementById("password")
+        if (showpw.type === "password") {
+            showpw.type = "text";}
+            else{
+                showpw.type = "password";}
+        }
+       
+
+   </script>
+</body>
+</html>

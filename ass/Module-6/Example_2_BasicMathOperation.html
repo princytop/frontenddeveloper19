@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 2 Basic Math Operation</title>
+    <style>
+        table {
+            border: 2px solid;
+            padding: 20px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        button {
+            width: 30px;
+        }
+
+        #result > span {
+            color: rgb(238, 238, 241);
+            font-weight: bold;
+        }
+        table{
+            background-color: rgb(4, 99, 99);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">
+                        Maths Operations
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="3">Enter 1st Number :</td>
+                    <td><input type="number" name="first" id="first"></td>
+                </tr>
+                <tr>
+                    <td colspan="3">Enter 2nd Number :</td>
+                    <td><input type="number" name="second" id="second"></td>
+                </tr>
+                <tr>
+                    <td><button onclick="cal('+')">+</button></td>
+                    <td><button onclick="cal('-')">-</button></td>
+                    <td><button onclick="cal('*')">*</button></td>
+                    <td rowspan="2" id="result">Answer is :</td>
+                </tr>
+                <tr>
+                    <td><button onclick="cal('/')">/</button></td>
+                    <td><button onclick="cal('%')">%</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <script>
+        function cal(operator) {
+            let first = parseInt(document.getElementById("first").value);
+            let second = parseInt(document.getElementById("second").value);
+            let result;
+
+            switch (operator) {
+                case '+':
+                    result = first + second;
+                    break;
+                case '-':
+                    result = first - second;
+                    break;
+                case '*':
+                    result = first * second;
+                    break;
+                case '/':
+                    result = first / second;
+                    break;
+                case '%':
+                    result = first % second;
+                    break;
+                default:
+                    return;
+            }
+
+            document.getElementById("result").innerHTML = "Answer is : <span>" + result + "</span>";
+        }
+    </script>
+</body>
+
+</html>
