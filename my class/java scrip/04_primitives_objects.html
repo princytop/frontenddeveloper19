@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // nn bb ss u - Primitives in Js
+
+        //  all primitive datatypes//
+
+        let a = null ;                             //n//     // null//
+        let b = 345;                               //n//     //number///
+        let c = true; // can also be false         //b//     //  boolean//
+        let d = BigInt("567") + BigInt("3") ;      //b//     //bigint//
+        let e = "princy";                          //s//    //string//
+        let f = Symbol("I am a nice symbol");      //s//    //symbol//
+        let g = undefined ;                        //u//    // undefined//
+        console.log(a, b, c, d, e, f, g);
+        console.log(typeof c); // (use) fine type of bigint // 
+
+        // Non Primitive Data Type - Objects in Js
+        const item = {
+            "princy": true,
+            "pari": false,
+            "kavy": 67,
+            "pex": undefined
+        }
+        console.log(item["pari"])
+        console.log(item["princy"])
+        console.log(item["kavy"])
+        console.log(item["pex"])
+    </script>
+</body>
+
+</html>
