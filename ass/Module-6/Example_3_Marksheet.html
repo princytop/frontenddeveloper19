@@ -1,187 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Example 3 Create result</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 20px;
-      background: rgb(70, 121, 119);
-    }
-
-    h1 {
-      text-align: center;
-      font-size: xx-large;
-    }
-
-    section {
-      border: 2px solid;
-      display: block;
-      margin: auto;
-    }
-
-    .row {
-      width: 50%;
-      margin: auto;
-
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-
-    th,
-    td {
-      padding: 15px 0px;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-    }
-
-    th {
-      background-color: #034f3f;
-    }
-
-    #total,
-    #percentage {
-      font-weight: bold;
-      text-align: center;
-      margin-top: 20px;
-      color: blue;
-
-    }
-
-    #result {
-      font-weight: bold;
-      font-size: 20px;
-      text-align: center;
-      margin-top: 20px;
-      color: rgb(19, 44, 19);
-    }
-
-
-    button {
-      background-color: rgb(4, 78, 58);
-      padding: 10px 50px;
-      display: block;
-      margin: auto;
-      margin-top: 30px;
-    }
-
-    .display {
-        display: flex;
-        justify-content: space-between;
-     
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Sheet</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #Wrapper{
+            /* display: flex; */
+            text-align: center;
+            padding: 50px 0;
+        }
+        .container{
+            width: 1200px;
+            margin: 20px auto;
+        }
+        .row{
+            display: flex;
+        }
+        .jcs{
+            justify-content: space-evenly;
+        }
+        .col_50 Ol li{
+            margin: 10px;
+            font-size: 20px;
+        }
+        ol li{
+            padding: 5px 20px;
+        }
+        .col_50 input{
+            display: block;
+            margin: 13px 0;
+            width: 200px;
+            padding: 5px 20px;
+        }
+        h3{
+            display: inline;
+            margin-right: 70px;
+        }
+        .btn{
+            padding: 10px 20px;
+            font-size: 17px;
+            border: none;
+            background-color: black;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .princy{
+          background-color: rgb(127, 176, 255);
+          /* padding: 20px 20px; */
+          margin:100px 100px;
+        }
+    </style>
 </head>
-
 <body>
-  <section>
-    <div class="row">
-      <h1>Marksheet for Information Technology</h1>
-      <table>
-        <tr>
-          <th>Subject</th>
-          <th>Enter Marks</th>
-        </tr>
-        <tr>
-          <td>C Language</td>
-          <td><input type="text" id="C_Language" placeholder="Obtained Marks"></td>
-        </tr>
-        <tr>
-          <td>C++ Language</td>
-          <td><input type="text" id="C++_Language" placeholder="Obtained Marks"></td>
-        </tr>
-        <tr>
-          <td>Database</td>
-          <td><input type="text" id="Database" placeholder="Obtained Marks"></td>
-        </tr>
-        <tr>
-          <td>HTML</td>
-          <td><input type="text" id="HTML" placeholder="Obtained Marks"></td>
-        </tr>
-        <tr>
-          <td>CSS</td>
-          <td><input type="text" id="CSS" placeholder="Obtained Marks"></td>
-        </tr>
-        <tr>
-          <td>php</td>
-          <td><input type="text" id="php" placeholder="Obtained Marks"></td>
-        </tr>
-        <tr>
-          <td>Core java</td>
-          <td><input type="text" id="Core_java" placeholder="Obtained Marks"></td>
-        </tr>
-      </table>
-      <button onclick="calculateTotal()">Result</button>
-      <div class="display">
-        <div id="total"></div>
-        <div id="percentage"></div>
-      </div>
+  <div class="princy">
+    <div id="Wrapper">
+        <h3>Student Marks Sheet</h3>
+        <div class="container row jcs">
+            <div class="col_50">
+                <ol>
+                    <li>C Language</li>
+                    <li>C++ Language</li>
+                    <li>Database</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Core Java</li>
+                    <li>Python</li>
+                </ol>
+            </div>
+            <div class="col_50">
+                <input type="tel" class="" name="" id="addition1">
+                <input type="tel" class="" name="" id="addition2">
+                <input type="tel" class="" name="" id="addition3">
+                <input type="tel" class="" name="" id="addition4">
+                <input type="tel" class="" name="" id="addition5">
+                <input type="tel" class="" name="" id="addition6">
+                <input type="tel" class="" name="" id="addition7">
+            </div>
+        </div>
+        <div class="container">
+            <h3>Total :  <span id="all-total">0</span></h3>
+            <h3>Percentage : <span id="percentage">0</span>%</h3>
+        </div>
+        <div class="">
+            <button class="btn">=</button>
+        </div>  
     </div>
-  </section>
-  <!-- <script>
-    function calculateTotal() {
+  </div>
+    <script>
+        // console.log(typeof total7);
+        let btn = document.querySelector(".btn")
+        let getResult = document.getElementById("all-total")
+        let Percentage = document.getElementById("percentage")
         
-        let inputData = document.querySelectorAll("input") ;
-            let totalMarks = 0;
-            inputData.forEach(input => {
-                let value = parseInt(input.value);
-                if (value > 50 || value < 0) {
-                    alert('Marks is not be greater than "50" and Less than "0".')
-                }
-                if (!isNaN(value)) {
-                    totalMarks += value;
-                }
-                if (value === '') {
-    alert('Input field cannot be empty!');
-}
-                let prcntg = (totalMarks / 350) * 100;
-                let percentage = prcntg.toPrecision(4);
-                document.getElementById('total').innerHTML = 'Total is : ' + totalMarks + "/350";
-                document.getElementById('percentage').innerHTML = 'Percentage is : ' + percentage + '%';
-            });
-            }
-    
-      </script> -->
+        btn.addEventListener("click" ,  () => {
+            let total1 = document.getElementById("addition1").value; // parseFloat() , Too Converte String to Numner.
+            let total2 = document.getElementById("addition2").value;
+            let total3 = document.getElementById("addition3").value;
+            let total4 = document.getElementById("addition4").value;
+            let total5 = document.getElementById("addition5").value;
+            let total6 = document.getElementById("addition6").value;
+            let total7 = document.getElementById("addition7").value;
+            // getResult.innerHTML = Number(total1)+Number(total2)+Number(total3)+Number(total4)+Number(total5)+Number(total6)+Number(total7);
+            // getResult.innerHTML = total1 * 1+total2 * 1+total3 * 1;
+            getResult.innerHTML = parseFloat(total1)+parseFloat(total2)+parseFloat(total3)+parseFloat(total4)+parseFloat(total5)+parseFloat(total6)+parseFloat(total7);
+            Percentage.innerHTML = (getResult.innerHTML * 100)/700;
+        })
+    </script>
 
-      <script>
-        function calculateTotal() {
-    let inputData = document.querySelectorAll("input");
-    let totalMarks = 0;
-    
-    inputData.forEach(input => {
-        let value = parseInt(input.value);
-        
-        if (value > 50 || value < 0) {
-            alert('Marks should not be greater than "50" or less than "0".');
-        }
-        
-        if (isNaN(value)) {
-            alert('Invalid input. Please enter a valid number.');
-        } else {
-            totalMarks += value;
-        }
-    });
-    
-    if (totalMarks === 0) {
-        alert('Input fields cannot be empty!');
-    } else {
-        let prcntg = (totalMarks / 350) * 100;
-        let percentage = prcntg.toPrecision(4);
-        document.getElementById('total').innerHTML = 'Total is : ' + totalMarks + "/350";
-        document.getElementById('percentage').innerHTML = 'Percentage is : ' + percentage + '%';
-    }
-}
-
-      </script>
 </body>
-
 </html>
