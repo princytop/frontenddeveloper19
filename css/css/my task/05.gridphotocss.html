@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            display: grid;
+            background-color: gray;
+            grid-template-columns: 200px 200px 200px 200px;
+            grid-template-rows: 200px 200px 200px 200px ;
+            row-gap: 10px;
+            column-gap: 10px;
+            height: 1200px;
+            
+        }
+        .box{
+            background-color: aqua;
+
+        }
+         .box img{
+            width: 100%;
+            height: 100%;
+         }
+
+         #bmw{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+   
+}
+   #dog{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+}
+   #domi{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#icon {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+}
+     #in{ 
+        grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#taj{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box" id="bmw"><img src="../my task/img/sky 1.jpg" alt=""></div>
+        <div class="box" id="dog"><img src="../my task/img/sky 2.jpeg" alt=""></div>
+        <div class="box" id="domi"><img src="../my task/img/sky 3.webp" alt=""></div>
+        <div class="box" id="icon"><img src="../my task/img/dog-.jpg" alt=""></div>
+        <div class="box" id="in"><img src="../my task/img/sky 1.jpg" alt=""></div>
+        <div class="box" id="taj"><img src="../my task/img/sky 7.jpg" alt=""></div>
+        
+    </section>
+</body>
+</html>

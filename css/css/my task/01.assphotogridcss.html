@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    section{
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px 200px;
+        row-gap: 5px;
+        column-gap: 5px;
+        background-color: black;
+        height: 2000px;
+    }
+    .box{
+        background-color: pink;
+        border: solid black;
+    }
+    .box img{
+        width: 100%;
+        height: 100%;
+    }
+    #dog{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    #bm{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 5;
+        grid-column-end: 7;
+
+    }
+    #domi{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    #hos{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 6;
+
+    }
+    #lo{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 6;
+        grid-column-end: 7;
+
+    }
+    #in{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 4 ;
+
+    }
+    #logo{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 4;
+        grid-column-end: 7;
+
+    }
+
+    #sky{
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+    }
+    #go{
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 3;
+        grid-column-end: 5;
+
+    }
+    #run{
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 5;
+        grid-column-end: 7;
+    }
+
+
+</style>
+<body>
+    <section>
+      
+          <div  class="box"  id="dog"> <img src="img/sky 1.jpg" alt=""></div>
+          <div  class="box" id="bm"> <img src="img/sky 2.jpeg" alt=""></div>
+          <div  class="box" id="domi"> <img src="img/sky 3.webp" alt=""></div>
+          <div  class="box" id="hos"> <img src="img/w1.jpeg" alt=""></div>
+          <div  class="box" id="lo"> <img src="img/w2.jpg" alt=""></div>
+          <div  class="box" id="in"> <img src="img/w5.png" alt=""></div>
+          <div  class="box" id="logo"> <img src="img/sky 8.jpeg" alt=""></div>
+          <div  class="box" id="sky"> <img src="img/sky 7.jpg" alt=""></div>
+          <div  class="box" id="go"> <img src="img/sky 9.jpeg" alt=""></div>
+          <div  class="box" id="run"> <img src="img/w4.jpg" alt=""></div>
+
+       
+    </section>
+</body>
+</html>
