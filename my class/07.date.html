@@ -16,6 +16,23 @@
         console.log(myDate.toLocaleTimeString());
         console.log(myDate.toTimeString());
         console.log(myDate.toUTCString());
+        console.log(typeof myDate);
+
+
+        let mycreatdate = new Date(2024, 0, 25);
+        // let mycreatdate = new Date(2024, 0, 25 ,5,3);//time(5,3)//
+        // let mycreatdate = new Date("2024-01-25");//--yyyy-mm-dd--//
+        // let mycreatdate = new Date("01-25-2024");//--mm-dd-yyyy--//
+        console.log(mycreatdate.toDateString());
+
+         let mytimestamp = Date.now()
+
+         console.log(mytimestamp);
+         console.log(mycreatdate.getTime());
+         console.log(Math.floor(Date.now()/1000));//second
+
+
+
     </script>
 </body>
 </html>
