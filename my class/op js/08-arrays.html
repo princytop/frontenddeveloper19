@@ -20,16 +20,60 @@
 
         //array methods//
 
-        // 1.push // last index add
+        // 1.push // last index add kare//
        myArr.push(7)
        myArr.push(8)
        console.log(myArr)
 
-        // 2.pop// last index remove
+        // 2.pop// last index remove kare//
        myArr.pop()
        console.log(myArr)
 
-    //    3.
+    //    3.unshift // 1st indext add kare//
+
+    myArr.unshift(12)
+    console.log(myArr)
+
+      //4.shift// 1st index remove kare//
+      myArr.shift()
+    console.log(myArr)
+
+    // 5.includes //true and flase me ans dega //
+
+    console.log(myArr.includes(2))
+    console.log(myArr.indexOf(8))
+
+    // 6.join
+
+    let newArr = myArr.join()
+
+    console.log(myArr)
+    console.log( typeof myArr)//object//
+    console.log(newArr)
+    console.log(typeof newArr)//string//
+
+    // 7.slice
+
+    console.log( "a",myArr);//orignal value//
+    let myn1 = myArr.slice(1,3)//3 num nai aave 1 2 ni j vlue aavse
+    console.log(myn1);// 1,2//
+
+    console.log( "b",myArr);//orignal value//
+
+    // let myn2 = myArr.splice(1,3)//3 num sudhi ni value aave 1 2 3
+    // console.log(myn2);// 1,2,3//
+
+//uper ni 2 line comment karvani//
+
+    let myn2 = myArr.splice(1,3)
+    console.log("c", myArr);//0,,4,5,7// 7 atle aaviyu km ke last index 7 push kariti//
+    console.log(myn2);//1,2,3//
+
+     
+
+
+
+      
 
 
 
