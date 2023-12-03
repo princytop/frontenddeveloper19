@@ -20,7 +20,36 @@
 
 
         let mycreatdate = new Date(2024, 0, 25);
+        // let mycreatdate = new Date(2024, 0, 25 ,5,3);//time(5,3)//
+        // let mycreatdate = new Date("2024-01-25");//--yyyy-mm-dd--//
+        // let mycreatdate = new Date("01-25-2024");//--mm-dd-yyyy--//
         console.log(mycreatdate.toDateString());
+
+         let mytimestamp = Date.now()
+
+         console.log(mytimestamp);
+         console.log(mycreatdate.getTime());
+         console.log(Math.floor(Date.now()/1000));//second
+
+
+         let newdate =new Date()
+         console.log(newdate);
+         console.log(newdate.getDate());
+         console.log(newdate.getDay());
+         console.log(newdate.getFullYear());
+         console.log(newdate.getHours());
+         console.log(newdate.getMilliseconds());
+         console.log(newdate.getMinutes());
+         console.log(newdate.getMonth());
+         console.log(newdate.getSeconds());
+         console.log(newdate.getTime());
+         console.log(newdate.getTimezoneOffset());
+         console.log(newdate.getUTCDate());
+         console.log(newdate.getUTCDay());
+
+         `${newdate.getDate()}and the time`
+
+
     </script>
 </body>
 </html>
