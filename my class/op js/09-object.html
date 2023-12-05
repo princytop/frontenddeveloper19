@@ -11,9 +11,12 @@
         //singlton
 
         //object literals
+        let mysym = Symbol("key1")
 
         let jsuser ={
             name:"princy",
+            "fullname": "princy patel",
+            [mysym]:"mykey1",
             age: 20,
             location:"ahmedabad",
             email:"princytops@gmail.com",
@@ -21,8 +24,13 @@
             lastLoginDays:["monday","saturday"]
         }
 
+      
+         console.log(jsuser);
          console.log(jsuser.age);
-         console.log(jsuser[age]);
+         console.log(jsuser["age"]);
+         console.log(jsuser.fullname);
+         console.log(jsuser["fullname"]);
+         console.log(jsuser[mysym]);
     </script>
 </body>
 </html>
