@@ -13,10 +13,10 @@
         //object literals
         let mysym = Symbol("key1")
 
-        let jsuser ={
+        let JsUser ={
             name:"princy",
             "fullname": "princy patel",
-            [mysym]:"mykey1",
+            // [mysym]:"mykey1",
             age: 20,
             location:"ahmedabad",
             email:"princytops@gmail.com",
@@ -25,25 +25,26 @@
         }
 
       
-         console.log(jsuser);
-         console.log(jsuser.age);
-         console.log(jsuser["age"]);
-         console.log(jsuser.fullname);
-         console.log(jsuser["fullname"]);
-         console.log(jsuser[mysym]);
-         console.log(typeof jsuser[mysym]);
+        //  console.log(JsUser);
+        //  console.log(JsUser.age);
+        //  console.log(JsUser["age"]);
+        //  console.log(JsUser.fullname);
+        //  console.log(JsUser["fullname"]);
+        //  console.log(JsUser[mysym]);
+        //  console.log(typeof JsUser[mysym]);
 
 
-         jsuser.email = "princyop@gmail.com"
-          Object.freeze(jsuser)
-        jsuser.email="princygit@gmail.com"
-         console.log(jsuser);
+         JsUser.email = "princyop@gmail.com"
+        //   Object.freeze(JsUser)
+          JsUser.email="princygit@gmail.com"
+         console.log(JsUser);
 
-         jsuser.greeting = function(){
-            console.log("hello js user");
+         JsUser.greeting = function(){
+         console.log("Hello JS user"); }
+        
+        console.log(JsUser.greeting());
+        
 
-         }
-          console.log(jsuser.greeting());
 
     </script>
 </body>
