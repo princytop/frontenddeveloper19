@@ -40,9 +40,14 @@
          console.log(JsUser);
 
          JsUser.greeting = function(){
-         console.log("Hello JS user"); }
+         console.log("Hello JS user"); }// run karvafreeze ne commit karvu padse//
+         
+         JsUser.greetingtwo = function(){
+         console.log(`Hello JS user, ${this.fullname}`); }// run karvafreeze ne commit karvu padse//
         
+        // console.log(JsUser.greeting);
         console.log(JsUser.greeting());
+        console.log(JsUser.greetingtwo());
         
 
 
