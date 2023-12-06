@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        let tinderuser= new Object()
-         tinderuser.id="123p"
-         tinderuser.name="princy"
-         tinderuser.isloggedin=false
+        let tinderuser = new Object()
+        tinderuser.id = "123p"
+        tinderuser.name = "princy"
+        tinderuser.isloggedin = false
         console.log(tinderuser);
+
+
+        let regularuser = {
+            email: "dill@gamil.com",
+            fullname: {
+                userfullname: {
+                    fristname: "princy",
+                    lastname: "patel",
+                }
+            }
+        }
+        console.log(regularuser.fullname); 
     </script>
 </body>
+
 </html>
