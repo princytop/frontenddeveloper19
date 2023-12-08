@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function saymyname() {
+            console.log("p");
+            console.log("r");
+            console.log("i");
+            console.log("n");
+            console.log("c");
+            console.log("y");
+        }
+
+        // saymyname()
+
+        // function addtwonumber(num1, num2) {
+        //     console.log(num1 + num2);
+        // }
+        
+        // addtwonumber(3 ,4)//7
+        // addtwonumber(3 ,"4")//34
+        // addtwonumber(3 , "a")//3a
+        // addtwonumber(3 , null)//3
+
+        function addtwonumber(num1, num2) {
+        //    let result = num1+ num2
+        //    console.log("princy");
+        //    return result
+
+        // ...2...
+
+        return num1+ num2
+
+        }
+
+         let result = addtwonumber(3 ,4)
+         console.log("result:" ,result)
+
+        //  -----------------------------------
+
+        function loginusermsg (username){
+            if (username === undefined) {
+                console.log("plz enter a username");
+                return// return kar su to just logging nai aave
+            }
+            return `${username} just loging`
+        }
+         console.log(loginusermsg("princy"))
+         console.log(loginusermsg(""))
+         console.log(loginusermsg())
+    </script>
+</body>
+
+</html>
