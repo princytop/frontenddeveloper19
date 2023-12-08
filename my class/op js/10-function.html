@@ -31,18 +31,50 @@
         // addtwonumber(3 , null)//3
 
         function addtwonumber(num1, num2) {
-           let result = num1+ num2
-           console.log("princy");
-           return result
+        //    let result = num1+ num2
+        //    console.log("princy");
+        //    return result
+
+        // ...2......................
+
+        return num1+ num2
+
         }
 
          let result = addtwonumber(3 ,4)
          console.log("result:" ,result)
 
+        //  -----------------------------------
+
+        function loginusermsg (username){
+            if (username === undefined) {
+                console.log("plz enter a username");
+                return// return kar su to just logging nai aave
+            }
+            return `${username} just loging`
+        }
+         console.log(loginusermsg("princy"))
+         console.log(loginusermsg(""))
+         console.log(loginusermsg())
+
+        //  -------------------------------------
+
+        function loginusermsg (username = "sam"){// sam is  defined name
+            if (username === undefined) {
+                console.log("plz enter a username");
+                return// return kar su to just logging nai aave
+            }
+            return `${username} just loging`
+        }
+         console.log(loginusermsg("princy"))
+         console.log(loginusermsg(""))
+         console.log(loginusermsg())
 
 
+        //  -----------------------------------------
+
+        
     </script>
-
 </body>
 
 </html>
