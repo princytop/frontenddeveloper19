@@ -79,12 +79,29 @@
          console.log(calculatecartprice(200,400,500,300,400));
 
         //  ------------------------------------
-        function calculatecartprice(val1,val,...num1){
+        function calculatecartprice(val1,val2, ...num1){
          return num1
         }
          console.log(calculatecartprice(200,400,500,300,400));
-         
+
+         let user = {
+            username : "princy",
+            price : 199
+
+         }
+          function handleobject(anyobj){
+            console.log(`username is ${anyobj.username} and price is ${anyobj.price}`);
+          }
+          handleobject(user)
           
+        //   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+          mynewarry = [200,400,500,600]
+
+          function returnsecondvalue (getarry){
+            return getarry[1]
+          }
+          console.log(returnsecondvalue(mynewarry));
     </script>
 </body>
 
